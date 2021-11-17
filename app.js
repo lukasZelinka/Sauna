@@ -2,11 +2,7 @@ const toggleNav = document.querySelector(".nav-toggle");
 const containerLinks = document.querySelector(".links-container");
 const links = document.querySelector(".links");
 
-// SET DATE
-const date = document.querySelector("#date");
-date.innerHTML = new Date().getFullYear();
-
-// 1) NAVBAR smaller screen
+//  NAVBAR smaller screen
 
 toggleNav.addEventListener("click", () => {
   const containerLinksHeight = containerLinks.getBoundingClientRect().height;
@@ -17,6 +13,12 @@ toggleNav.addEventListener("click", () => {
   } else {
     containerLinks.style.height = 0;
   }
+});
+
+const logo = document.querySelector(".logo");
+
+logo.addEventListener("click", () => {
+  containerLinks.style.height = 0;
 });
 
 const navbar = document.querySelector("#nav");
@@ -32,7 +34,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// 2) Smooth scrolling to section
+//  Smooth scrolling to section
 
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
@@ -53,7 +55,6 @@ scrollLinks.forEach((link) => {
       left: 0,
       top: position,
     });
-
     containerLinks.style.height = 0;
   });
 });
