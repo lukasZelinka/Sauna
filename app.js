@@ -1,8 +1,12 @@
 const toggleNav = document.querySelector(".nav-toggle");
 const containerLinks = document.querySelector(".links-container");
 const links = document.querySelector(".links");
+const logo = document.querySelector(".logo");
+const navbar = document.querySelector("#nav");
+const arrow = document.querySelector(".top-link");
+const scrollLinks = document.querySelectorAll(".scroll-link");
 
-//  NAVBAR smaller screen
+//  navbar -  smaller screen
 
 toggleNav.addEventListener("click", () => {
   const containerLinksHeight = containerLinks.getBoundingClientRect().height;
@@ -15,14 +19,11 @@ toggleNav.addEventListener("click", () => {
   }
 });
 
-const logo = document.querySelector(".logo");
-
 logo.addEventListener("click", () => {
   containerLinks.style.height = 0;
 });
 
-const navbar = document.querySelector("#nav");
-const arrow = document.querySelector(".top-link");
+// back to top
 
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
@@ -34,9 +35,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//  Smooth scrolling to section
-
-const scrollLinks = document.querySelectorAll(".scroll-link");
+//  scrolling to the section with  fixed navbar
 
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
