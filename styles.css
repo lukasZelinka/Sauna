@@ -152,9 +152,6 @@ main {
 .fixed-nav .links a:hover {
   color: var(--clr-grey-4);
 }
-/* .fixed-nav .links-container {
-  height: auto !important;
-} */
 .nav-header {
   display: flex;
   align-items: center;
@@ -168,13 +165,9 @@ main {
   transition: var(--transition);
   cursor: pointer;
 }
-.nav-toggle:hover {
-  color: var(--clr-secondary);
-}
 .logo {
   height: 1.525em;
 }
-
 .links-container {
   height: 0;
   overflow: hidden;
@@ -246,6 +239,8 @@ header {
 
 footer {
   background: var(--clr-secondary);
+  background-color: #0c0801;
+  /* background-color: black; */
   padding: 3rem 1rem;
 }
 footer p {
@@ -263,10 +258,8 @@ footer p {
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  /* bottom: 3rem; */
-  bottom: 2rem;
+  bottom: 2.5rem;
   right: 3rem;
-  /* right: 2rem; */
   background: var(--clr-secondary);
   width: 2rem;
   height: 2rem;
@@ -275,7 +268,7 @@ footer p {
   border-radius: var(--radius);
   color: var(--clr-secondary-1);
   animation: bounce 2s ease-in-out infinite;
-
+  opacity: 0.5;
   visibility: hidden;
   z-index: -100;
 }
