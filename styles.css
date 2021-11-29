@@ -12,7 +12,8 @@
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-primary-1: #d5f2f2;
-  --clr-secondary: #83a8a8;
+  --clr-secondary: #f4e6cf;
+  --clr-secondary-1: #f69f16;
   --clr-white: rgb(255, 255, 255);
   --clr-black: #222;
   --transition: all 0.3s linear;
@@ -245,7 +246,7 @@ header {
 
 footer {
   background: var(--clr-secondary);
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
 }
 footer p {
   color: var(--clr-white);
@@ -254,19 +255,25 @@ footer p {
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
+.footer-text {
+  color: var(--clr-secondary-1);
+  font-weight: 200;
+}
 
 .top-link {
   font-size: 1.25rem;
   position: fixed;
-  bottom: 3rem;
+  /* bottom: 3rem; */
+  bottom: 2rem;
   right: 3rem;
+  /* right: 2rem; */
   background: var(--clr-secondary);
   width: 2rem;
   height: 2rem;
   display: grid;
   place-items: center;
   border-radius: var(--radius);
-  color: var(--clr-white);
+  color: var(--clr-secondary-1);
   animation: bounce 2s ease-in-out infinite;
 
   visibility: hidden;
@@ -570,6 +577,7 @@ footer p {
     display: flex;
     justify-content: center;
     padding: 3em;
+    padding-bottom: 1em;
   }
   .flex-container-contact h4 {
     font-size: 1.55em;
