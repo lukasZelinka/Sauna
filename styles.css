@@ -51,6 +51,12 @@ ul {
 a {
   text-decoration: none;
 }
+.social-icons a,
+.social-icons a:visited,
+.social-icons a:hover,
+.social-icons a:active {
+  color: #102a42;
+}
 img:not(.logo) {
   width: 100%;
 }
