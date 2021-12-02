@@ -5,15 +5,15 @@ const logo = document.querySelector(".logo");
 const navbar = document.querySelector("#nav");
 const arrow = document.querySelector(".top-link");
 const scrollLinks = document.querySelectorAll(".scroll-link");
+const gellery_section = document.getElementById("pictures");
+const gallery_a = document.getElementById("gallery_a");
 
-// gallery problem
+// hide - show gallery
 
-const galleryPic = document.getElementById("pictures");
-galleryPic.style.display = "none";
+gellery_section.style.display = "none";
 
-const gal = document.getElementById("gal");
-gal.addEventListener("click", (e) => {
-  galleryPic.style.display = "block";
+gallery_a.addEventListener("click", (e) => {
+  gellery_section.style.display = "block";
 });
 
 //  navbar -  smaller screen
@@ -67,14 +67,3 @@ scrollLinks.forEach((link) => {
     containerLinks.style.height = 0;
   });
 });
-
-// problem gallery fixing
-// const priSer = document.getElementById("priSer");
-// const galleryPic = document.getElementById("pictures");
-
-// if (window.pageYOffset === 0) {
-//   galleryPic.style.display = "none";
-// }
-// if (window.pageYOffset !== 0) {
-//   galleryPic.style.display = "block";
-// }
