@@ -6,6 +6,16 @@ const navbar = document.querySelector("#nav");
 const arrow = document.querySelector(".top-link");
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
+// gallery problem
+
+const galleryPic = document.getElementById("pictures");
+galleryPic.style.display = "none";
+
+const gal = document.getElementById("gal");
+gal.addEventListener("click", (e) => {
+  galleryPic.style.display = "block";
+});
+
 //  navbar -  smaller screen
 
 toggleNav.addEventListener("click", () => {
@@ -57,3 +67,14 @@ scrollLinks.forEach((link) => {
     containerLinks.style.height = 0;
   });
 });
+
+// problem gallery fixing
+// const priSer = document.getElementById("priSer");
+// const galleryPic = document.getElementById("pictures");
+
+// if (window.pageYOffset === 0) {
+//   galleryPic.style.display = "none";
+// }
+// if (window.pageYOffset !== 0) {
+//   galleryPic.style.display = "block";
+// }
