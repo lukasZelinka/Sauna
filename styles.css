@@ -31,6 +31,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -38,6 +39,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
@@ -172,7 +174,7 @@ main {
   cursor: pointer;
 }
 .logo {
-  height: 1.525em;
+  height: 1.75em;
 }
 .links-container {
   height: 0;
@@ -313,6 +315,9 @@ footer p {
   .gallery-column {
     flex: 50%;
     max-width: 50%;
+  }
+  #nav {
+    padding: 0.875rem 1.5rem;
   }
 }
 @media (max-width: 600px) {
