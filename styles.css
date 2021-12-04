@@ -435,6 +435,10 @@ footer p {
     margin: 0px auto;
     margin-top: 3.125em;
   }
+  header {
+    background: linear-gradient(rgba(242, 192, 148, 0.5), rgba(0, 0, 0, 0.7)),
+      url(./img/hans-small1.jpg) center/cover no-repeat;
+  }
 }
 @media screen and (max-width: 799.98px) {
   /* CONTACT */
