@@ -8,14 +8,6 @@ const scrollLinks = document.querySelectorAll(".scroll-link");
 const gellery_section = document.getElementById("pictures");
 const gallery_a = document.getElementById("gallery_a");
 
-// hide - show gallery
-
-gellery_section.style.display = "none";
-
-gallery_a.addEventListener("click", (e) => {
-  gellery_section.style.display = "block";
-});
-
 //  navbar -  smaller screen
 
 toggleNav.addEventListener("click", () => {
